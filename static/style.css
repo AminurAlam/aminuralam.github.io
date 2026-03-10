@@ -5,9 +5,10 @@
   --fg: light-dark(#1a1a1a, #c0caf5);
   --bg: light-dark(#cce, #24283b);
   --a: light-dark(#0050b3, #7aa2f7);
-  --highlight: light-dark(#7aa2f755, #2e3c6466);
-  --quote: light-dark(#2e3c64, #7aa2f7);
-  --code-bg: light-dark(#2e3c64, #7aa2f7);
+  --selection: light-dark(#7aa2f7, #2e3c64);
+  --quote-line: light-dark(#2e3c64, #7aa2f7);
+  --quote-bg: light-dark(#7aa2f755, #2e3c6466);
+  --code-bg: light-dark(#9f9fff, #1a1b26);
 
   color-scheme: dark; /* default */
   &:has(#light:checked) {
@@ -39,11 +40,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px 0 10px;
-  & nav {
+  nav {
     padding: 10px 0 10px 20px;
     display: flex;
-    /* gap: calc(100% - 140px); */
-    column-gap: 2ch;
+    gap: calc(100% - 140px);
     align-items: baseline;
     flex-wrap: wrap;
   }
@@ -70,8 +70,8 @@ h3::before {
 }
 
 blockquote {
-  border-left: 0.2em solid var(--quote);
-  background: var(--highlight);
+  border-left: 0.2em solid var(--quote-line);
+  background: var(--quote-bg);
   p {
     padding: 5pt 5px 5pt 15px;
   }
@@ -82,4 +82,17 @@ pre.giallo {
   border-radius: 10px;
   /* TODO: apply */
   background: var(--code-bg);
+  code {
+    background: #1a1b26;
+  }
+}
+
+code {
+  font-family: berkley;
+  background: var(--code-bg);
+}
+
+*::selection,
+*::-moz-selection {
+  background: var(--selection);
 }

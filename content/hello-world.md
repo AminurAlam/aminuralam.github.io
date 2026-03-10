@@ -1,5 +1,5 @@
 +++
-title = 'blog init'
+title = 'hello world'
 date = '2026-01-01'
 +++
 
@@ -8,6 +8,14 @@ date = '2026-01-01'
 This page demonstrates the features of the ZolaNight theme.
 
 This is a paragraph of text. You can write about anything you want here.
+This page demonstrates the features of the ZolaNight theme.
+
+This is a `paragraph` of text. You can write about anything you want here.
+This page demonstrates the features of the ZolaNight theme.
+This is a paragraph of text. You can `write` about anything you want here.
+This is a paragraph of text. You can write about anything you want here.
+This page `demonstrates the features` of the ZolaNight theme.
+This page demonstrates the features of the ZolaNight theme.
 
 ## Heading 2
 
