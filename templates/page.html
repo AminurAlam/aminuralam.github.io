@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="gland">
+	{% include "nav.html" %}
+	<div class="marginalizer">
+		<div class="minority">
+			<header>
+				<a href="..">
+					<div class="title">{{ page.title }}</div>
+				</a>
+				<div class="date">
+					<time datetime="{{ page.date }}">{{ page.date | date(format="%Y.%m.%d") }}</time>
+				</div>
+			</header>
+			<main>
+				<!-- <div class="reading-time">reading time: {{ page.reading_time }}</div> -->
+				{{ page.content | safe }}
+			</main>
+		</div>
+	</div>
+	{% include "socials.html" %}
+	{% include "nav.html" %}
+	<footer id="bottom"></footer>
+</div>
+{% endblock content %}

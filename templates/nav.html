@@ -1,0 +1,27 @@
+<nav>
+	{% if page.lower %}
+		<a href="{{ page.lower.permalink }}" class="preview previous">
+			<span class="direction">&lt;-</span>
+			<span class="name">{{page.lower.title}}</span>
+		</a>
+	{% else %}
+		<div class="preview empty previous"></div>
+	{% endif %}
+	<a href=".." class="go-home">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1625 1300" width="30" height="30" fill="#b58cc6">
+			<g transform="scale(1,-1) translate(-20,-1290)">
+				<path
+					d="M1408 544V64q0-26-19-45t-45-19h-384v384H704V0H320q-26 0-45 19t-19 45v480q0 5 1 6l575 474 575-474q1-2 1-6zm223 69l-62-74q-8-9-21-11h-3q-13 0-21 7L832 1112 140 535q-12-8-24-7-13 2-21 11l-62 74q-8 10-7 23.5T37 657l719 599q32 26 76 26t76-26l244-204v195q0 14 9 23t23 9h192q14 0 23-9t9-23V840l219-182q10-8 11-21.5t-7-23.5z" />
+			</g>
+		</svg>
+	</a>
+	{% if page.higher %}
+		<a href="{{ page.higher.permalink }}" class="preview next">
+			<span class="name">{{page.higher.title}}</span>
+			<span class="direction">-&gt;</span>
+		</a>
+	{% else %}
+		<div class="preview empty next">
+		</div>
+	{% endif %}
+</nav>
