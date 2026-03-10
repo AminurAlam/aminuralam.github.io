@@ -3,6 +3,8 @@ title = 'blog init'
 date = '2026-01-01'
 +++
 
+# Heading 1
+
 This page demonstrates the features of the ZolaNight theme.
 
 This is a paragraph of text. You can write about anything you want here.
@@ -45,7 +47,3 @@ def hello_world():
 
 Here is a link to the
 [Zola documentation](https://www.getzola.org/documentation/getting-started/overview/).
-
-And here is an image:
-
-![Placeholder Image](/images/placeholder.png)

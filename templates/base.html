@@ -13,10 +13,25 @@
     <meta name="robots" content="index, follow" />
     <title>muh blog</title>
     <link rel="icon" type="image/icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="{{ get_url(path='style.css') }}" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
 
   <body>
-    {% block content %} {% endblock content %}
+    <nav>
+      <a href="/" style="text-decoration: none">./home</a>
+      <!-- <a href="/projects">./projects</a> -->
+      <!-- <a href="/contact">./contact</a> -->
+
+      <span>
+        <input type="radio" id="light" name="theme" aria-label="light mode" />
+        <label for="light" title="light mode">☀️</label>
+        <input type="radio" id="dark" name="theme" aria-label="dark mode" />
+        <label for="dark" title="dark mode">🌙</label>
+      </span>
+    </nav>
+
+    <hr />
+
+    <main>{% block content %} {% endblock content %}</main>
   </body>
 </html>

@@ -1,30 +1,85 @@
+/* https://aashvik.com/posts/shell-ssg/ */
+
+:root {
+  color-scheme: light dark;
+  --fg: light-dark(#1a1a1a, #c0caf5);
+  --bg: light-dark(#cce, #24283b);
+  --a: light-dark(#0050b3, #7aa2f7);
+  --highlight: light-dark(#7aa2f755, #2e3c6466);
+  --quote: light-dark(#2e3c64, #7aa2f7);
+  --code-bg: light-dark(#2e3c64, #7aa2f7);
+
+  color-scheme: dark; /* default */
+  &:has(#light:checked) {
+    color-scheme: light;
+  }
+  &:has(#dark:checked) {
+    color-scheme: dark;
+  }
+}
+
+#light,
+#dark {
+  display: none;
+}
+
 @font-face {
   font-family: "berkley";
   src: url("BerkeleyMono-Regular.ttf");
 }
 
 body {
-  background: #24283b;
-  color: #c0caf5;
+  background: var(--bg);
+  color: var(--fg);
+  /* text-justify: newspaper; */
+  /* text-align: justify; */
   font-family: berkley;
-  font-size: 1.3em;
-  nav {
-    font-size: 1.5em;
-  }
-  main {
-    max-width: 34rem;
-    margin-left: auto;
-    margin-right: auto;
-    ul {
-      list-style-type: "- ";
-    }
-  }
-  pre {
-    font-size: 0.7em;
+  font-size: 1.1em;
+  max-width: 44rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px 0 10px;
+  & nav {
+    padding: 10px 0 10px 20px;
+    display: flex;
+    /* gap: calc(100% - 140px); */
+    column-gap: 2ch;
+    align-items: baseline;
+    flex-wrap: wrap;
   }
 }
 
+/* common */
+
 a {
-  text-decoration: none;
-  color: #7aa2f7;
+  color: var(--a);
+}
+
+ul {
+  list-style-type: "- ";
+}
+
+h1::before {
+  content: "# ";
+}
+h2::before {
+  content: "## ";
+}
+h3::before {
+  content: "### ";
+}
+
+blockquote {
+  border-left: 0.2em solid var(--quote);
+  background: var(--highlight);
+  p {
+    padding: 5pt 5px 5pt 15px;
+  }
+}
+
+pre.giallo {
+  padding: 1em;
+  border-radius: 10px;
+  /* TODO: apply */
+  background: var(--code-bg);
 }

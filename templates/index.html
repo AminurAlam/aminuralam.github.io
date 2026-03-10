@@ -1,22 +1,17 @@
 {% extends "base.html" %} {% block content %}
 
-<a href="/index.html">HOME</a>
-<a href="/blog">./blog</a>
-<a href="/projects">./projects</a>
-<a href="/contact">./contact</a>
+<div>hello this is my website</div>
 
-<hr />
+<br />
 
-<div id="face">
-  <section class="blog-list">
-    {% for page in section.pages %}
-    <section class="blog-item">
-      <time datetime="{{ page.date }}" class="date">
-        {{ page.date | date(format="%Y.%m.%d") }}
-      </time>
-      <a href="{{ page.permalink | safe }}" class="title">{{ page.title }}</a>
-    </section>
-    {% endfor %}
-  </section>
-</div>
+BLOGS:
+
+<ul>
+  {% for page in section.pages %}
+  <li>
+    {{ page.date | date(format="%Y-%m-%d") }}
+    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
 {% endblock content %}
