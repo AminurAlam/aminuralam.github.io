@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "berkley";
+  src: url("BerkeleyMono-Regular.ttf");
+}
+
+body {
+  background: #24283b;
+  color: #c0caf5;
+  font-family: berkley;
+  font-size: 1.3em;
+  nav {
+    font-size: 1.5em;
+  }
+  main {
+    max-width: 34rem;
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+      list-style-type: "- ";
+    }
+  }
+  pre {
+    font-size: 0.7em;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #7aa2f7;
+}

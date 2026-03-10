@@ -1,46 +1,22 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {% block rss %}
     <link
       rel="alternate"
       type="application/rss+xml"
       title="RSS"
-      href='{{ get_url(path="rss.xml", trailing_slash=false) }}'
+      href="/rss.xml"
     />
-    {% endblock %}
     <meta charset="UTF-8" />
-    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow" />
-    {% if page.title %}
-    <title>{{ page.title }}</title>
-    {% else %}
-    <title>{{ config.title }}</title>
-    {% endif %} {% block css %}
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,700;1,14..32,400;1,14..32,700&display=block"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,400;0,700;1,400;1,700&display=block"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ get_url(path='css/style.css', trailing_slash=false) | safe }}"
-    />
-    {% endblock css %}
+    <title>muh blog</title>
+    <link rel="icon" type="image/icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="{{ get_url(path='style.css') }}" />
   </head>
 
   <body>
-    <div>{% block content %} {% endblock content %}</div>
+    {% block content %} {% endblock content %}
   </body>
 </html>

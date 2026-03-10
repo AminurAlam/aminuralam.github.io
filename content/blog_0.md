@@ -1,5 +1,5 @@
 +++
-title = "Heading 1: Regular page"
+title = 'blog init'
 date = '2026-01-01'
 +++
 

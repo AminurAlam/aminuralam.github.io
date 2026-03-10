@@ -1,39 +1,22 @@
-{% extends "base.html" %}
-{% block content %}
-{% include "socials.html" %}
-<div id="face">
-	<!-- <div class="marginalizer"> -->
-		<!-- <div class="minority"> -->
-			<!-- <main>{{ section.content | safe }}</main> -->
-		<!-- </div> -->
-	<!-- </div> -->
+{% extends "base.html" %} {% block content %}
 
-	<section class="blog-list">
-		{% for page in section.pages %}
-			<section class="blog-item">
-				<a href="{{ page.permalink | safe }}" class="title">{{ page.title }}</a>
-				<time datetime="{{ page.date }}" class="date">{{ page.date | date(format="%Y.%m.%d") }}</time>
-			</section>
-		{% endfor %}
-	</section>
-	<div class="marginalizer">
-		<div class="minority">
-			<section class="shring">
-				This website is part of the
-				<a href="https://shring.ficd.sh/">shring</a>
-				webring!
-			</section>
-		</div>
-	</div>
-	<nav>
-		<a href="https://shring.sh/axlefublr/previous" class="preview previous">
-			<span class="direction">&lt;-</span>
-			<span class="name">glorp</span>
-		</a>
-		<a href="https://shring.sh/axlefublr/next" class="preview next">
-			<span class="name">squonk</span>
-			<span class="direction">-&gt;</span>
-		</a>
-	</nav>
+<a href="/index.html">HOME</a>
+<a href="/blog">./blog</a>
+<a href="/projects">./projects</a>
+<a href="/contact">./contact</a>
+
+<hr />
+
+<div id="face">
+  <section class="blog-list">
+    {% for page in section.pages %}
+    <section class="blog-item">
+      <time datetime="{{ page.date }}" class="date">
+        {{ page.date | date(format="%Y.%m.%d") }}
+      </time>
+      <a href="{{ page.permalink | safe }}" class="title">{{ page.title }}</a>
+    </section>
+    {% endfor %}
+  </section>
 </div>
 {% endblock content %}

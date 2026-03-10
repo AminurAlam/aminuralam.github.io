@@ -1,7 +1,6 @@
 +++
-title = 'blog 2'
+title = 'blog 1'
 date = '2026-01-02'
-draft = true
 +++
 
 # h1
