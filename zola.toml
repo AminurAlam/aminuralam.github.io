@@ -1,4 +1,7 @@
+title = "fisher blog"
 base_url = "https://aminuralam.github.io"
+generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml"]
 compile_sass = false
 build_search_index = false
 
@@ -7,5 +10,8 @@ external_links_target_blank = true
 
 [markdown.highlighting]
 theme = "tokyo-night"
+# style = "class"
+# light_theme = "catppuccin-latte"
+# dark_theme = "tokyo-night"
 
 [extra]

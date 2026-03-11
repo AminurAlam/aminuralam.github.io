@@ -41,11 +41,30 @@ body {
   margin-right: auto;
   padding: 0 10px 0 10px;
   nav {
-    padding: 10px 0 10px 20px;
+    padding: 10px 0 10px 0;
     display: flex;
-    gap: calc(100% - 140px);
     align-items: baseline;
     flex-wrap: wrap;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+    }
+    svg {
+      height: 1.5em;
+      width: 1.5em;
+      fill: var(--fg);
+      color: var(--fg);
+    }
+  }
+
+  main {
+    div#blog-head {
+      padding: 20px 0 20px 0;
+      text-align: center;
+      div#blog-title {
+        font-size: 2em;
+      }
+    }
   }
 }
 
@@ -59,14 +78,23 @@ ul {
   list-style-type: "- ";
 }
 
-h1::before {
-  content: "# ";
+h1 {
+  font-size: 1.8em;
+  &::before {
+    content: "# ";
+  }
 }
-h2::before {
-  content: "## ";
+h2 {
+  font-size: 1.4em;
+  &::before {
+    content: "## ";
+  }
 }
-h3::before {
-  content: "### ";
+h3 {
+  font-size: 1.2em;
+  &::before {
+    content: "### ";
+  }
 }
 
 blockquote {
@@ -80,7 +108,6 @@ blockquote {
 pre.giallo {
   padding: 1em;
   border-radius: 10px;
-  /* TODO: apply */
   background: var(--code-bg);
   code {
     background: #1a1b26;
