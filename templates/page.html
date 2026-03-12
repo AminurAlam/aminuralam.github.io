@@ -3,4 +3,5 @@
   <div id="blog-date">{{ page.date | date(format="%Y.%m.%d") }}</div>
   <div id="blog-title">{{ page.title }}</div>
 </div>
-{{ page.content | safe }} {% endblock content %}
+<hr />
+<article>{{ page.content | safe }} {% endblock content %}</article>
