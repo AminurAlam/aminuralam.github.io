@@ -3,7 +3,7 @@
 
   --fg: light-dark(#1a1a1a, #c0caf5);
   --bg: light-dark(#cce, #24283b);
-  --a: light-dark(#0050b3, #7aa2f7);
+  --link: light-dark(#0050b3, #7aa2f7);
   --selection: light-dark(#7aa2f7, #2e3c64);
   --quote-line: light-dark(#2e3c64, #7aa2f7);
   --quote-bg: light-dark(#7aa2f755, #2e3c6466);
@@ -78,7 +78,13 @@ body {
   }
 
   a {
-    color: var(--a);
+    color: var(--link);
+    /* &:hover {
+      color: var(--bg);
+      background: var(--link);
+      text-decoration-color: var(--link);
+      text-decoration-skip-ink: none;
+    } */
   }
   ul {
     list-style-type: "- ";
@@ -111,6 +117,7 @@ body {
   code {
     font-family: my-font, monospace;
     background: var(--code-bg);
+    padding: 0 0.3rem;
   }
   pre.giallo {
     padding: 1em;

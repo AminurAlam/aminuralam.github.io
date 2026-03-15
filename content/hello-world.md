@@ -55,3 +55,5 @@ def hello_world():
 
 Here is a link to the
 [Zola documentation](https://www.getzola.org/documentation/getting-started/overview/).
+
+![alt text](https://http.cat/404)
