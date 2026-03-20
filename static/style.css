@@ -105,7 +105,8 @@ body {
 
   div.footnote-definition {
     font-size: 0.9em;
-    background-color: var(--bg-darker);
+    color: var(--fg);
+    /* background-color: var(--bg-darker); */
     padding: 1em 1em 0.01em 1em;
     border-radius: var(--round);
   }
