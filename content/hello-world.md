@@ -5,33 +5,27 @@ date = '2026-01-01'
 
 # Heading 1
 
-This page demonstrates the features of the ZolaNight theme.
+Lorem ipsum [dolor sit](https://www.getzola.org/documentation/getting-started/overview/)
+amet, `consectetur` adipiscing elit, sed[^1] do[^2] eiusmod tempor **incididunt** ut
+labore et dolore magnam _aliquam_ quaerat voluptatem. Ut enim aeque doleamus animo,
+cum corpore dolemus, fieri tamen permagna.
 
-This is a paragraph of text. You can write about anything you want here.
-This page demonstrates the features of the ZolaNight theme.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo,
+cum corpore dolemus, fieri tamen permagna.
 
-This is a `paragraph` of text. You can write about anything you want here.
-This page demonstrates the features of the ZolaNight theme.
-This is a paragraph of text. You can `write` about anything you want here.
-This is a paragraph of text. You can write about anything you want here.
-This page `demonstrates the features` of the ZolaNight theme.
-This page demonstrates the features of the ZolaNight theme.
-
-## Heading 2
+## Heading 2.1
 
 Here is a list of items:
 
 - Item 1
 - Item 2
 - Item 3
+  1. First
+  2. Second
+  3. Third
 
-And an ordered list:
-
-1. First item
-2. Second item
-3. Third item
-
-### Heading 3
+## Heading 2.2
 
 Here is a blockquote:
 
@@ -53,7 +47,11 @@ def hello_world():
     print("Hello, world!")
 ```
 
-Here is a link to the
-[Zola documentation](https://www.getzola.org/documentation/getting-started/overview/).
-
+An image:
 ![alt text](https://http.cat/404)
+
+---
+
+[^1]: this is some text explaining the footnote above
+
+[^2]: this is more text explaining the footnote above

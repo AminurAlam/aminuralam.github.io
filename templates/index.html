@@ -4,12 +4,14 @@
 
 <br />
 
-BLOGS:
+POSTS:
 
 <ul>
   {% for page in section.pages %}
   <li>
-    {{ page.date | date(format="%Y-%m-%d") }}
+    <time datetime="{{ page.date }}" class="date">
+      {{ page.date | date(format="%Y-%m-%d") }}
+    </time>
     <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
   </li>
   {% endfor %}

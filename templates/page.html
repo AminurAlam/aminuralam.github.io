@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block content %}
 <div id="blog-head">
-  <div id="blog-date">{{ page.date | date(format="%Y.%m.%d") }}</div>
+  <div id="blog-date">{{ page.date | date(format="%Y-%m-%d") }}</div>
   <div id="blog-title">{{ page.title }}</div>
 </div>
 <hr />
