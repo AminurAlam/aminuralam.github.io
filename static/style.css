@@ -4,7 +4,7 @@
   --fg: light-dark(#1a1a1a, #c0caf5);
   --bg: light-dark(#cce, #24283b);
   --bg-darker: light-dark(#1a1b26, #1a1b26);
-  --blue: light-dark(#0050b3, #7aa2f7);
+  --accent: light-dark(#0050b3, #7aa2f7);
   --selection: light-dark(#7aa2f7, #2e3c64);
   --code-bg: light-dark(color-mix(in srgb, var(--selection), #aaa), #2e3c64);
   --list: light-dark(#b15c00, #ff9e64);
@@ -53,11 +53,11 @@ body {
   padding: 0 10px 0 10px;
 
   a {
-    color: var(--blue);
+    color: var(--accent);
     &:hover {
       color: var(--bg);
-      background: var(--blue);
-      text-decoration-color: var(--blue);
+      background: var(--accent);
+      text-decoration-color: var(--accent);
       text-decoration-skip-ink: none;
     }
   }
@@ -75,7 +75,7 @@ body {
     a {
       text-decoration: none;
       &:hover {
-        color: var(--blue);
+        color: var(--accent);
         background: var(--bg);
       }
     }
@@ -113,8 +113,8 @@ body {
   a.zola-anchor {
     text-decoration: none;
     &:hover {
-      color: var(--blue);
-      background: var(--bg);
+      /* color: var(--accent); */
+      /* background: var(--bg); */
     }
   }
 }
@@ -128,31 +128,40 @@ li::marker {
 }
 
 h1 {
-  color: var(--blue);
   font-size: 1.8em;
   &::before {
+    color: var(--accent);
     content: "# ";
+  }
+  a {
+    color: var(--fg);
   }
 }
 
 h2 {
-  color: var(--blue);
   font-size: 1.4em;
   &::before {
+    color: var(--accent);
     content: "## ";
+  }
+  a {
+    color: var(--fg);
   }
 }
 
 h3 {
-  color: var(--blue);
   font-size: 1.2em;
   &::before {
+    color: var(--accent);
     content: "### ";
+  }
+  a {
+    color: var(--fg);
   }
 }
 
 blockquote {
-  border-left: 0.2em solid var(--blue);
+  border-left: 0.2em solid var(--accent);
   /* background: var(--quote-bg); */
   p {
     padding: 5pt 5px 5pt 15px;
