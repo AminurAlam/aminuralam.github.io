@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="ATOM Feed"
+      href="/atom.xml"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS Feed"
+      href="/rss.xml"
+    />
+    <meta charset="UTF-8" />
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <title>fisher's blog</title>
+    <link rel="icon" type="image/icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <span>
+        <a href="/">
+          <svg viewBox="0 0 640 640">
+            <title>home button to go to the root</title>
+            <path
+              d="M304 70.1C313.1 61.9 326.9 61.9 336 70.1L568 278.1C577.9 286.9 578.7 302.1 569.8 312C560.9 321.9 545.8 322.7 535.9 313.8L527.9 306.6L527.9 511.9C527.9 547.2 499.2 575.9 463.9 575.9L175.9 575.9C140.6 575.9 111.9 547.2 111.9 511.9L111.9 306.6L103.9 313.8C94 322.6 78.9 321.8 70 312C61.1 302.2 62 287 71.8 278.1L304 70.1zM320 120.2L160 263.7L160 512C160 520.8 167.2 528 176 528L224 528L224 424C224 384.2 256.2 352 296 352L344 352C383.8 352 416 384.2 416 424L416 528L464 528C472.8 528 480 520.8 480 512L480 263.7L320 120.3zM272 528L368 528L368 424C368 410.7 357.3 400 344 400L296 400C282.7 400 272 410.7 272 424L272 528z"
+            />
+          </svg>
+        </a>
+        <label for="light" title="light mode">
+          <input type="radio" id="light" name="theme" aria-label="light mode" />
+          <svg id="light-icon" viewBox="0 0 640 640">
+            <title>light mode button</title>
+            <path
+              d="M320 32C328 32 335.4 36 339.9 42.6L398.7 130L502.1 109.8C509.9 108.3 518 110.7 523.7 116.4C529.4 122.1 531.8 130.2 530.3 138L510 241.3L597.4 300.1C604 304.5 608 312 608 320C608 328 604 335.4 597.4 339.9L510 398.7L530.2 502C531.7 509.8 529.3 517.9 523.6 523.6C517.9 529.3 509.8 531.7 502 530.2L398.7 510L339.9 597.4C335.4 604 328 608 320 608C312 608 304.6 604 300.1 597.4L241.3 510L137.9 530.2C130.1 531.7 122 529.3 116.3 523.6C110.6 517.9 108.2 509.8 109.7 502L130 398.7L42.6 339.9C36 335.4 32 328 32 320C32 312 36 304.6 42.6 300.1L130 241.3L109.8 137.9C108.3 130.1 110.7 122 116.4 116.3C122.1 110.6 130.2 108.2 138 109.7L241.3 129.9L300.1 42.5L301.9 40.2C306.4 35 313 32 320 32zM272.2 170C266.8 178 257.2 182 247.7 180.2L163.7 163.8L180.1 247.8C181.9 257.3 177.9 266.9 169.9 272.3L99 320L170 367.8C178 373.2 182 382.8 180.2 392.3L163.8 476.3L247.8 459.9L251.3 459.5C259.6 459.1 267.6 463.1 272.3 470.1L320.1 541.1L367.9 470.1L370.1 467.3C375.7 461.2 384.1 458.3 392.4 460L476.4 476.4L460 392.4C458.2 382.9 462.2 373.3 470.2 367.9L541.2 320.1L470.2 272.3C462.2 266.9 458.2 257.3 460 247.8L476.4 163.8L392.4 180.2C382.9 182 373.3 178 367.9 170L320.1 99L272.3 170zM320 440C253.7 440 200 386.3 200 320C200 253.7 253.7 200 320 200C386.3 200 440 253.7 440 320C440 386.3 386.3 440 320 440zM320 248C280.2 248 248 280.2 248 320C248 359.8 280.2 392 320 392C359.8 392 392 359.8 392 320C392 280.2 359.8 248 320 248z"
+            />
+          </svg>
+        </label>
+        <label for="dark" title="dark mode">
+          <input type="radio" id="dark" name="theme" aria-label="dark mode" />
+          <svg id="dark-icon" viewBox="0 0 640 640">
+            <title>dark mode button</title>
+            <path
+              d="M303.3 112.7C196.2 121.2 112 210.8 112 320C112 434.9 205.1 528 320 528C353.3 528 384.7 520.2 412.6 506.3C309.2 482.9 232 390.5 232 280C232 214.2 259.4 154.9 303.3 112.7zM64 320C64 178.6 178.6 64 320 64C339.4 64 358.4 66.2 376.7 70.3C386.6 72.5 394 80.8 395.2 90.8C396.4 100.8 391.2 110.6 382.1 115.2C321.5 145.4 280 207.9 280 280C280 381.6 362.4 464 464 464C469 464 473.9 463.8 478.8 463.4C488.9 462.6 498.4 468.2 502.6 477.5C506.8 486.8 504.6 497.6 497.3 504.6C451.3 548.8 388.8 576 320 576C178.6 576 64 461.4 64 320z"
+            />
+          </svg>
+        </label>
+      </span>
+
+      <span>
+        <a href="//github.com/AminurAlam">
+          <svg
+            class="rtl:ml-0 h-3.5 hidden md:inline ml-0.5 rtl:mr-0.5 w-3.5"
+            data-icon="tabler:brand-github"
+          >
+            <title>github logo</title>
+            <symbol id="ai:tabler:brand-github" viewBox="0 0 24 24">
+              <path
+                d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6c-.6.6-.6 1.2-.5 2V21"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </symbol>
+            <use href="#ai:tabler:brand-github"></use>
+          </svg>
+        </a>
+        <a
+          href="mailto:%70%61%6c%6c%65%74%70%61%72%6b%65%72%40%67%6d%61%69%6c%2e%63%6f%6d"
+        >
+          <svg viewBox="0 0 640 640">
+            <title>email logo</title>
+            <path
+              d="M125.4 128C91.5 128 64 155.5 64 189.4C64 190.3 64 191.1 64.1 192L64 192L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 192L575.9 192C575.9 191.1 576 190.3 576 189.4C576 155.5 548.5 128 514.6 128L125.4 128zM528 256.3L528 448C528 456.8 520.8 464 512 464L128 464C119.2 464 112 456.8 112 448L112 256.3L266.8 373.7C298.2 397.6 341.7 397.6 373.2 373.7L528 256.3zM112 189.4C112 182 118 176 125.4 176L514.6 176C522 176 528 182 528 189.4C528 193.6 526 197.6 522.7 200.1L344.2 335.5C329.9 346.3 310.1 346.3 295.8 335.5L117.3 200.1C114 197.6 112 193.6 112 189.4z"
+            />
+          </svg>
+        </a>
+        <a href="/atom.xml">
+          <svg viewBox="0 0 640 640">
+            <title>rss logo</title>
+            <path
+              d="M96 128C96 110.3 110.3 96 128 96C357.8 96 544 282.2 544 512C544 529.7 529.7 544 512 544C494.3 544 480 529.7 480 512C480 317.6 322.4 160 128 160C110.3 160 96 145.7 96 128zM96 480C96 444.7 124.7 416 160 416C195.3 416 224 444.7 224 480C224 515.3 195.3 544 160 544C124.7 544 96 515.3 96 480zM128 224C287.1 224 416 352.9 416 512C416 529.7 401.7 544 384 544C366.3 544 352 529.7 352 512C352 388.3 251.7 288 128 288C110.3 288 96 273.7 96 256C96 238.3 110.3 224 128 224z"
+            />
+          </svg>
+        </a>
+      </span>
+    </nav>
+
+    
+<div id="blog-head">
+  <div id="blog-date">2026-03-18</div>
+  <div id="blog-title">re: Wayland set the Linux Desktop back by 10 years</div>
+</div>
+<hr />
+<article><p><a rel="noopener external" target="_blank" href="https://omar.yt/posts/wayland-set-the-linux-desktop-back-by-10-years">https://omar.yt/posts/wayland-set-the-linux-desktop-back-by-10-years</a></p>
+<p>Wayland has been a broad misdirection and misallocation of time and
+developer resources at the expense of users. With more migration from
+other operating systems, the pressure to fix fundamental problems has
+become more prominent. After 17 years of development, now is a good time
+to reflect on some of the larger promises that have been made around the
+development of Wayland as a replacement for the X11 display protocol.</p>
+<p>If you're not in this space, hopefully it will still be interesting as
+an engineering post-mortem on taking on new greenfield projects. Namely:
+What are the issues with what exists, why can they not be fixed, what do
+we hope to achieve with a new project, and how long do we expect it to
+take?</p>
+<h1 id="background-and-the-problems-with-x11"><a class="zola-anchor" href="#background-and-the-problems-with-x11" aria-label="Anchor link for: background-and-the-problems-with-x11">Background and the problems with X11</a></h1>
+<p>If you're already familiar with X11 and Wayland feel free to skip to the
+next part.</p>
+<p>For people not familiar with Linux, here's a quick rundown of the terms
+in this space, roughly in the order of highest-level to lowest-level:</p>
+<ul>
+<li>Applications
+<ul>
+<li>These are the things you want to run</li>
+<li>Examples: Chrome, Steam, OBS</li>
+</ul>
+</li>
+<li>Desktop Environment (DE)
+<ul>
+<li>This is what manages things like window theming, notifications, task
+bars, etc.</li>
+<li>Examples: KDE, GNOME</li>
+</ul>
+</li>
+<li>Compositor
+<ul>
+<li>This is what layers windows on top of each other and does
+animations, graphical effects, etc.</li>
+<li>Examples: Compiz, KWin (for KDE), Sway, i3</li>
+</ul>
+</li>
+<li>Display Server
+<ul>
+<li>This is the thing that manages the display, it also abstracts away
+some of the hardware details so all the above work on NVidia, AMD,
+Intel, etc.</li>
+<li>Examples: X11, Wayland</li>
+</ul>
+</li>
+<li>Kernel / Operating System
+<ul>
+<li>The lower-layer thing that manages hardware resources, for us this
+is Linux</li>
+<li>Examples: Linux, FreeBSD</li>
+</ul>
+</li>
+</ul>
+<p>The above is not a complete list, but it's enough to give some framing
+for understanding that X11 is a fundamental piece of most Linux
+environments.</p>
+<p>X11 is currently still the most common popular display server in the
+Linux ecosystem. It was developed in the mid-1980s and, as legacy
+projects tend to do, has accumulated functionality that makes it
+difficult to maintain, according to the developers.</p>
+<p>So, in 2008, Kristian Høgsberg started the project that became known as
+<a rel="noopener external" target="_blank" href="https://www.phoronix.com/review/xorg_wayland">Wayland</a>. Wayland (in
+theory) replaces the display server, as well as some parts of the
+compositor and desktop environment with a simpler display protocol and
+reference implementation. The original conceit behind Wayland is to only
+implement what is needed for a simple Linux desktop. The original
+implementation was a little over 3,000 lines of code.</p>
+<p>Sounds great!</p>
+<h1 id="so-what-happened"><a class="zola-anchor" href="#so-what-happened" aria-label="Anchor link for: so-what-happened">So what happened?</a></h1>
+<p>It's 2026, and Wayland has reached a market share of around
+<a rel="noopener external" target="_blank" href="https://x.com/LundukeJournal/status/1994963236827865224">40-50%</a>, or
+closer to <a rel="noopener external" target="_blank" href="https://chandanadev.com/linux_2">50-60%</a> depending on your
+source. I would argue a product that has taken 17 years to gain
+substantial marketshare has issues hindering adoption. Compare the
+development of Wayland to a similar project for managing audio:
+PipeWire. Within ~8 years, every alternative has been mostly replaced.
+It's been adopted as the default in Ubuntu since 22.04, roughly 4 years
+after it first launched!</p>
+<p>These are the most common issues I have seen from the perspective of a
+user, so I will try to stay light on what I consider to be mostly
+irrelevant technical details and instead focus on larger issues around
+the rollout and design of Wayland.</p>
+<h2 id="wayland-is-more-secure-which-means-i-can-t-do-anything"><a class="zola-anchor" href="#wayland-is-more-secure-which-means-i-can-t-do-anything" aria-label="Anchor link for: wayland-is-more-secure-which-means-i-can-t-do-anything">Wayland is more secure (which means I can't do anything)</a></h2>
+<p>The reason I use Linux and other Unix-likes is that they give me the
+ability to do whatever I want on my system, including making mistakes!
+So why is my <strong>display server</strong> telling me that certain applications
+<em>that I installed and chose to run</em> aren't allowed to talk to each other
+in the name of security?</p>
+<p>There are multiple cases of this: OBS can't screen record (it segfaults
+instead), I can't copy-paste, and I can't see window previews unless
+everything implements a specific extension to the core protocol.</p>
+<p>The actual "threat model" here is baffling and doesn't seem to reflect a
+need for users. Applications are not able to see each other's windows,
+but they're not able to interact <em>in any other way</em> that could
+potentially cause problems?</p>
+<p>I also don't care for the "security" argument when parts of the core
+reference implementation are written in a memory-unsafe language. To be
+clear, <strong>I am not saying that software written in C is bad</strong>, I'm
+specifically calling out that making a <strong>security</strong> arugment about
+software then repeating decisions of the previous (40-year-old)
+implementation is a bad look.</p>
+<h2 id="wayland-is-more-performant-as-long-as-you-don-t-use-nvidia"><a class="zola-anchor" href="#wayland-is-more-performant-as-long-as-you-don-t-use-nvidia" aria-label="Anchor link for: wayland-is-more-performant-as-long-as-you-don-t-use-nvidia">Wayland is more performant (as long as you don't use NVidia)</a></h2>
+<p>Several of the design decisions that Wayland makes are claimed in the
+name of performance. Namely, collapsing many layers is supposed to
+reduce the number of copies when moving data between different
+components.</p>
+<p>However, whatever the reason, these performance gains haven't
+materialized, or are so anecdotal in either direction that it's
+difficult to claim a clear win over X11. In fact, you can find
+<a rel="noopener external" target="_blank" href="https://mort.coffee/home/wayland-input-latency/">examples</a> showing
+roughly a <strong>40% slowdown</strong> when using Wayland over X11! I'm sure there
+are similar benchmarks claiming Wayland wins and vice versa (happy to
+link them as well if provided).</p>
+<p>The problem is that, even if Wayland was <em>twice</em> as fast, it doesn't
+compare to improvements in hardware over the same period. It would've
+been better to just wait! The performance improvements would have to be
+much more substantial for this to be a reasonable argument in favor of
+Wayland. The fact that the question <em>even exists</em> as to whether one or
+the other is faster after a substantial period is an obvious failure.</p>
+<p>Additionally, those performance gains don't matter if I'm not able to
+make use of them. For example, if I'm using <a rel="noopener external" target="_blank" href="https://jpetazzo.github.io/2024/04/29/six-months-with-wayland-sway-i3/">the most popular graphics card vendor</a>
+in my system, I shouldn't expect things to work out of the box.</p>
+<h2 id="wayland-isn-t-just-one-thing-because-wayland-doesn-t-do-anything"><a class="zola-anchor" href="#wayland-isn-t-just-one-thing-because-wayland-doesn-t-do-anything" aria-label="Anchor link for: wayland-isn-t-just-one-thing-because-wayland-doesn-t-do-anything">Wayland isn't just "one thing" (because Wayland doesn't do anything)</a></h2>
+<p>One rebuttal I've heard is that it's not an issue with Wayland, it's an
+issue with the compositor/extension/application. After all, "Wayland"
+isn't a piece of software, it's a simple protocol that other software
+chooses to implement!</p>
+<p>Of course, what this means in practice is that there are multiple
+(usually incompatible) implementations of multiple different standards.
+Maybe this would be fine if the concept of a desktop operating system
+was completely new and unknown, but users balk when discovering things
+like <a rel="noopener external" target="_blank" href="https://wayland.app/protocols/xdg-toplevel-drag-v1">drag and drop</a>
+or <a rel="noopener external" target="_blank" href="https://wiki.hypr.land/Useful-Utilities/Screen-Sharing/">screen sharing</a> are
+not natively supported and are essentially still in "beta" status.</p>
+<p>Instead of providing a better way of doing something, common features
+are not supported <em>at all</em>, and instead it's the job of everyone else in
+the ecosystem to agree on a standard. That's not a stunning argument in
+favor of replacing something that already exists and that <em>has already
+been standardized in X11</em>!</p>
+<h2 id="wayland-is-still-under-active-development"><a class="zola-anchor" href="#wayland-is-still-under-active-development" aria-label="Anchor link for: wayland-is-still-under-active-development">Wayland is still under active development</a></h2>
+<p>Wayland has been around for <em>only</em> 17 years, while X11 has closer to 40
+years of development behind it. Things are still under development and
+<em>obviously</em> will get better, so why complain about issues that will
+inevitably get fixed?</p>
+<p><strong><em>Because it's been 17 years and people are still running into major
+issues!</em></strong></p>
+<p>I was unpleasantly surprised when using KDE Plasma that the default
+display server had been changed to Wayland. I noticed very quickly on
+startup when I encountered enough graphical hitches to realize I was
+running Wayland and quickly switch back. Anecdotal experience is not
+enough to say this is a broad issue, but my point is that when an
+average user encounters graphical issues within 60 seconds of using it,
+maybe it's not ready to be made the default! It was only within the last
+6 months that OBS stopped segfaulting when trying to launch on Wayland.
+I assume I'm in decent company when even the developer of a major
+compositor is <a rel="noopener external" target="_blank" href="https://michael.stapelberg.ch/posts/2026-01-04-wayland-sway-in-2026/">still not able to use Wayland in 2026</a>.</p>
+<p>The number of "simple" utilities that seem partially supported or
+half-baked is incredible and seems to be a massive duplication of
+effort. The tooling around X11 that has been developed over the last 40
+years seems to have been completely dropped and no alternative has been
+provided. Instead of providing an obvious transition path, Wayland has
+introduced even more fragmentation.</p>
+<p>Older software that has a ton of "legacy cruft" has been <em>tested</em> and
+bugs have long since been <em>fixed</em>. I fully believe with another 20 years
+of development things will be better. The problem is that I am being
+forced to make the switch <strong><em>now</em></strong>. See: The push from <a rel="noopener external" target="_blank" href="https://blogs.kde.org/2025/11/26/going-all-in-on-a-wayland-future/">KDE and RedHat to Wayland and dropping support for older technologies</a>.</p>
+<h2 id="opinion-of-wayland-developers"><a class="zola-anchor" href="#opinion-of-wayland-developers" aria-label="Anchor link for: opinion-of-wayland-developers">Opinion of Wayland developers</a></h2>
+<p><a rel="noopener external" target="_blank" href="https://web.archive.org/web/20211008180535/https://drewdevault.com/2021/02/02/Anti-Wayland-horseshit.html">This post</a>
+probably best encapsulates the developer opinion towards users trying to
+migrate to the next iteration of the Linux desktop:</p>
+<blockquote>
+<p>Maybe Wayland doesn’t work for your precious use-case. More likely, it
+does work, and you swallowed some propaganda based on an assumption
+which might have been correct 7 years ago. Regardless, I simply don’t
+give a shit about you anymore.</p>
+<p>...</p>
+<p>We’ve sacrificed our spare time to build this for you for free. If you
+turn around and harass us based on some utterly nonsensical conspiracy
+theories, then you’re a fucking asshole.</p>
+</blockquote>
+<p>It's even more ironic compared to the post <a rel="noopener external" target="_blank" href="https://web.archive.org/web/20230605024414/https://drewdevault.com/2021/02/09/Rust-move-fast-and-break-things.html">made a week
+later</a>,
+expressing the same frustration with the Rust community that people have
+with Wayland!</p>
+<p>Drew has since deleted this post, so I understand if he no longer stands
+by those opinions. However, it's a representative slice of developer
+sentiment towards users that are now being forced to use unfinished
+software. Entitlement and bullying of open-source maintainers is not
+appropriate, and it's understandable that the developers lash out after
+feeling beaten down by entitled users. However, to have some sympathy on
+the user side, it's likely born out of frustration of being forced to
+use the new hotness and then encountering breaking bugs that are
+impossible for the average user to work around.</p>
+<p>It is not the fault of the original developers for building what they
+wanted to build. I think it's important to keep in mind that they didn't
+necessarily <em>choose</em> for Wayland to become as popular as it has or the
+foundation for the desktop of the future. See the diagram below:</p>
+<p><img src="https://omar.yt/images/gaslighting-cat.avif" alt="cat showing flowchart of open-source projects" /></p>
+<p>Having Wayland as a developers-only playground is fine! Have fun
+building stuff! But the second actual users are forced to use it expect
+them to be frustrated! At this point I consider Wayland to be a fun toy
+built entirely to pacify developers tired of working on a finished
+legacy project.</p>
+<h1 id="predictions-and-looking-forward"><a class="zola-anchor" href="#predictions-and-looking-forward" aria-label="Anchor link for: predictions-and-looking-forward">Predictions and looking forward</a></h1>
+<h2 id="things-to-be-excited-about"><a class="zola-anchor" href="#things-to-be-excited-about" aria-label="Anchor link for: things-to-be-excited-about">Things to be excited about</a></h2>
+<p>Since most of this post has been overwhelmingly negative against the
+development of Wayland, it's instead better to learn as much as possible
+and look forward towards "what would I want to be able to do". Windowing
+technology is absolutely not "done", and instead of following other
+operating systems, it would be fantastic if Linux could do things no
+other environment could do.</p>
+<p>For example, being able implement non-rectangular windows, exposing
+context actions (similar to MacOS), or making it easier to automate or
+script parts of the desktop environment would be incredibly exciting!</p>
+<p>It's difficult to overstate the amount of progress in support for
+gaming, new (and old) hardware, as well as the amount of overall
+"polish". Every developer should be proud to be a part of that!</p>
+<h1 id="conclusion"><a class="zola-anchor" href="#conclusion" aria-label="Anchor link for: conclusion">Conclusion</a></h1>
+<p>After 17 years, Wayland is still not ready for prime time. Notable
+breakage is being
+<a rel="noopener external" target="_blank" href="https://gist.github.com/probonopd/9feb7c20257af5dd915e3a9f2d1f2277">documented</a>,
+and adoption has been correspondingly slow.</p>
+<p>For some users the switch is seamless. For others (including myself),
+they tend to bounce off after encountering workflow-breaking issues. I
+think it's obvious at this point that the trade-offs have not been worth
+the hassle.</p>
+<p>My prediction is that within the next 5 years the following will be
+true:</p>
+<ol>
+<li>Projects will drop Wayland support and go back to X11</li>
+<li>There will be a new display protocol that displaces both X11 and
+Wayland</li>
+<li>The new display protocol will be a drop-in replacement (similar to
+XWayland)</li>
+<li>Fragmentation will still be an issue (this one's a freebie)</li>
+</ol>
+<p>See you in 2030 for the year of the Linux Desktop.</p>
+<h2 id="additional-reading"><a class="zola-anchor" href="#additional-reading" aria-label="Anchor link for: additional-reading">Additional reading</a></h2>
+<p>Included are some of the links referenced in this post as well as some
+additional reading.</p>
+<ul>
+<li>
+<p>Think twice before abandoning X11. Wayland breaks everything!</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://gist.github.com/probonopd/9feb7c20257af5dd915e3a9f2d1f2277">https://gist.github.com/probonopd/9feb7c20257af5dd915e3a9f2d1f2277</a></li>
+<li><a rel="noopener external" target="_blank" href="https://lobste.rs/s/2brhes/think_twice_before_abandoning_xorg?utm_source=chatgpt.com">https://lobste.rs/s/2brhes/think_twice_before_abandoning_xorg?utm_source=chatgpt.com</a></li>
+<li><a rel="noopener external" target="_blank" href="https://news.ycombinator.com/item?id=45222251">https://news.ycombinator.com/item?id=45222251</a></li>
+</ul>
+</li>
+<li>
+<p>Wayland is flawed at its core and the community needs to talk about it</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://www.reddit.com/r/linux/comments/1pxectw/wayland_is_flawed_at_its_core_and_the_community/">https://www.reddit.com/r/linux/comments/1pxectw/wayland_is_flawed_at_its_core_and_the_community/</a></li>
+</ul>
+</li>
+<li>
+<p>Going all-in on a Wayland future</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://blogs.kde.org/2025/11/26/going-all-in-on-a-wayland-future/">https://blogs.kde.org/2025/11/26/going-all-in-on-a-wayland-future/</a></li>
+</ul>
+</li>
+<li>
+<p>Unpopular Opinion: Linux world felt stable until Wayland/GTK4 arrived</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://www.reddit.com/r/linux/comments/1o5fmxv/unpopular_opinion_linux_world_felt_stable_until/">https://www.reddit.com/r/linux/comments/1o5fmxv/unpopular_opinion_linux_world_felt_stable_until/</a></li>
+</ul>
+</li>
+<li>
+<p>On Abandoning the X Server</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://news.ycombinator.com/item?id=24920183">https://news.ycombinator.com/item?id=24920183</a></li>
+</ul>
+</li>
+<li>
+<p>I'm tired of this anti-Wayland horseshit (deleted)</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="http://web.archive.org/web/20211008180535/https://drewdevault.com/2021/02/02/Anti-Wayland-horseshit.html">http://web.archive.org/web/20211008180535/https://drewdevault.com/2021/02/02/Anti-Wayland-horseshit.html</a></li>
+</ul>
+</li>
+<li>
+<p>Move fast and break things as a moral imperative (deleted)</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="http://web.archive.org/web/20230605024414/https://drewdevault.com/2021/02/09/Rust-move-fast-and-break-things.html">http://web.archive.org/web/20230605024414/https://drewdevault.com/2021/02/09/Rust-move-fast-and-break-things.html</a></li>
+</ul>
+</li>
+<li>
+<p>Can I finally start using Wayland in 2026?</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://michael.stapelberg.ch/posts/2026-01-04-wayland-sway-in-2026/">https://michael.stapelberg.ch/posts/2026-01-04-wayland-sway-in-2026/</a></li>
+</ul>
+</li>
+<li>
+<p>KiCad and Wayland Support</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://www.kicad.org/blog/2025/06/KiCad-and-Wayland-Support/">https://www.kicad.org/blog/2025/06/KiCad-and-Wayland-Support/</a></li>
+</ul>
+</li>
+<li>
+<p>Wayland Finally Gains Ground: Why 2025 is the Year of Desktop Linux
+Migration</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://chandanadev.com/linux_2">https://chandanadev.com/linux_2</a></li>
+</ul>
+</li>
+<li>
+<p>What is the true adoption rate of Wayland</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://x.com/LundukeJournal/status/1994963236827865224">https://x.com/LundukeJournal/status/1994963236827865224</a></li>
+</ul>
+</li>
+<li>
+<p>Simplified history of X Hector Martin</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://web.archive.org/web/20240110152647/https://social.treehouse.systems/@marcan/110371565062371963">https://web.archive.org/web/20240110152647/https://social.treehouse.systems/@marcan/110371565062371963</a></li>
+</ul>
+</li>
+<li>
+<p>Wayland breaks your bad software</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://web.archive.org/web/20240112184154/https://oro.gay/posts/wayland-breaks-your-bad-software/">https://web.archive.org/web/20240112184154/https://oro.gay/posts/wayland-breaks-your-bad-software/</a></li>
+</ul>
+</li>
+<li>
+<p>on abandoning the X server</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://ajaxnwnk.blogspot.com/2020/10/on-abandoning-x-server.html">https://ajaxnwnk.blogspot.com/2020/10/on-abandoning-x-server.html</a></li>
+</ul>
+</li>
+</ul>
+ 
+  </body>
+</html>

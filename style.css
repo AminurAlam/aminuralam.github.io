@@ -1,0 +1,194 @@
+:root {
+  color-scheme: dark;
+
+  --fg: light-dark(#1a1a1a, #c0caf5);
+  --bg: light-dark(#cce, #24283b);
+  --accent: light-dark(#0050b3, #7aa2f7);
+  --selection: light-dark(#7aa2f7, #2e3c64);
+  --list: light-dark(#b15c00, #ff9e64);
+
+  --round: 1em;
+  --width: 45rem;
+  --button-size: 1.7em;
+
+  @media (prefers-contrast: more) {
+    --fg: light-dark(#000, #fff);
+    --bg: light-dark(#ddf, #1a1b26);
+    --accent: light-dark(#00f, #00f);
+  }
+
+  #dark-icon {
+    display: none;
+  }
+  &:has(#light:checked) {
+    color-scheme: light;
+    #light-icon {
+      display: none;
+    }
+    #dark-icon {
+      display: inline;
+    }
+  }
+  &:has(#dark:checked) {
+    color-scheme: dark;
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+  }
+}
+
+@font-face {
+  font-family: "my-font";
+  src: url("/TX-02-Regular.woff2");
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: my-font, sans-serif;
+  font-size: 1.1em;
+  max-width: var(--width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px 0 10px;
+
+  a {
+    color: var(--accent);
+    @media (prefers-reduced-motion: no-preference) {
+      &:hover {
+        color: var(--bg);
+        background: var(--accent);
+        text-decoration-color: var(--accent);
+        text-decoration-skip-ink: none;
+      }
+    }
+  }
+
+  nav {
+    padding: 10px 0 10px 0;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    label {
+      input {
+        display: none;
+      }
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        color: var(--accent);
+        background: var(--bg);
+      }
+    }
+    svg {
+      height: var(--button-size);
+      width: var(--button-size);
+      fill: var(--fg);
+      color: var(--fg);
+    }
+  }
+
+  div#blog-head {
+    text-align: center;
+    div#blog-title {
+      font-size: 2em;
+    }
+  }
+
+  pre.giallo {
+    padding: 1em;
+    border-radius: var(--round);
+    @media (prefers-contrast: more) {
+      border: solid #fff;
+    }
+    code {
+      background: inherit;
+    }
+  }
+
+  div.footnote-definition {
+    font-size: 0.9em;
+    color: var(--fg);
+    padding: 1em 1em 0.01em 1em;
+    border-radius: var(--round);
+  }
+  a.zola-anchor {
+    text-decoration: none;
+    &:hover {
+      /* color: var(--accent); */
+      /* background: var(--bg); */
+    }
+  }
+}
+
+ul {
+  list-style-type: "- ";
+}
+
+li::marker {
+  color: var(--list);
+}
+
+h1 {
+  font-size: 1.8em;
+  &::before {
+    content: "# ";
+  }
+}
+
+h2 {
+  font-size: 1.4em;
+  &::before {
+    content: "## ";
+  }
+}
+
+h3 {
+  font-size: 1.2em;
+  &::before {
+    content: "### ";
+  }
+}
+
+h1,
+h2,
+h3 {
+  &::before {
+    color: var(--accent);
+  }
+  a {
+    color: var(--fg);
+  }
+}
+
+blockquote {
+  border-left: 0.2em solid var(--accent);
+  /* background: var(--quote-bg); */
+  p {
+    padding: 5pt 5px 5pt 15px;
+  }
+}
+
+code {
+  font-family: my-font, monospace;
+  background: var(--selection);
+  padding: 0.02em 0.3em;
+  margin: 0 -0.3em;
+  border-radius: 0.3em;
+}
+
+img {
+  max-width: 80%;
+  display: grid;
+  margin-inline: auto;
+}
+
+*::selection {
+  background: var(--selection);
+}
