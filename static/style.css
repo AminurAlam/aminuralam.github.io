@@ -3,15 +3,19 @@
 
   --fg: light-dark(#1a1a1a, #c0caf5);
   --bg: light-dark(#cce, #24283b);
-  --bg-darker: light-dark(#1a1b26, #1a1b26);
   --accent: light-dark(#0050b3, #7aa2f7);
   --selection: light-dark(#7aa2f7, #2e3c64);
-  --code-bg: light-dark(color-mix(in srgb, var(--selection), #aaa), #2e3c64);
   --list: light-dark(#b15c00, #ff9e64);
 
   --round: 1em;
   --width: 45rem;
   --button-size: 1.7em;
+
+  @media (prefers-contrast: more) {
+    --fg: light-dark(#000, #fff);
+    --bg: light-dark(#ddf, #1a1b26);
+    --accent: light-dark(#00f, #00f);
+  }
 
   #dark-icon {
     display: none;
@@ -44,7 +48,6 @@
 body {
   background: var(--bg);
   color: var(--fg);
-  /* text-align: justify; */
   font-family: my-font, sans-serif;
   font-size: 1.1em;
   max-width: var(--width);
@@ -54,11 +57,13 @@ body {
 
   a {
     color: var(--accent);
-    &:hover {
-      color: var(--bg);
-      background: var(--accent);
-      text-decoration-color: var(--accent);
-      text-decoration-skip-ink: none;
+    @media (prefers-reduced-motion: no-preference) {
+      &:hover {
+        color: var(--bg);
+        background: var(--accent);
+        text-decoration-color: var(--accent);
+        text-decoration-skip-ink: none;
+      }
     }
   }
 
@@ -69,8 +74,10 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 
-    input {
-      display: none;
+    label {
+      input {
+        display: none;
+      }
     }
     a {
       text-decoration: none;
@@ -97,16 +104,17 @@ body {
   pre.giallo {
     padding: 1em;
     border-radius: var(--round);
-    background: var(--code-bg);
+    @media (prefers-contrast: more) {
+      border: solid #fff;
+    }
     code {
-      background: var(--bg-darker);
+      background: inherit;
     }
   }
 
   div.footnote-definition {
     font-size: 0.9em;
     color: var(--fg);
-    /* background-color: var(--bg-darker); */
     padding: 1em 1em 0.01em 1em;
     border-radius: var(--round);
   }
@@ -130,30 +138,29 @@ li::marker {
 h1 {
   font-size: 1.8em;
   &::before {
-    color: var(--accent);
     content: "# ";
-  }
-  a {
-    color: var(--fg);
   }
 }
 
 h2 {
   font-size: 1.4em;
   &::before {
-    color: var(--accent);
     content: "## ";
-  }
-  a {
-    color: var(--fg);
   }
 }
 
 h3 {
   font-size: 1.2em;
   &::before {
-    color: var(--accent);
     content: "### ";
+  }
+}
+
+h1,
+h2,
+h3 {
+  &::before {
+    color: var(--accent);
   }
   a {
     color: var(--fg);
@@ -170,7 +177,7 @@ blockquote {
 
 code {
   font-family: my-font, monospace;
-  background: var(--code-bg);
+  background: var(--selection);
   padding: 0.02em 0.3em;
   margin: 0 -0.3em;
   border-radius: 0.3em;
