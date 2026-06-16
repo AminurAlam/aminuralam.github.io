@@ -1,7 +1,7 @@
 title = "fisher blog"
 base_url = "https://aminuralam.github.io"
 generate_feeds = true
-feed_filenames = ["atom.xml", "rss.xml"]
+feed_filenames = ["atom.xml"]
 compile_sass = false
 build_search_index = false
 
