@@ -1,21 +1,20 @@
 {% extends "base.html" %} {% block content %}
 
-<div>hello this is my website</div>
-
-<br />
-
-POSTS:
-
-<ul>
-  {% for page in section.pages %}
-  <li>
-    <time datetime="{{ page.date }}" class="date">
-      {{ page.date | date(format="%Y-%m-%d") }}
-    </time>
-    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-  </li>
-  {% endfor %}
-</ul>
+<main>
+  <div>hello this is my website</div>
+  <ul>
+    {% for page in section.pages %}
+    <li class="article-item">
+      <div>
+        <time datetime="{{ page.date }}" class="date">
+          {{ page.date | date(format="%Y-%m-%d") }}
+        </time>
+        <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</main>
 
 <!-- -- >
 <code style="font-size: 0.8em">

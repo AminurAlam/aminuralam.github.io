@@ -49,7 +49,8 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: my-font, sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  line-height: 1.4em;
   max-width: var(--width);
   margin-left: auto;
   margin-right: auto;
@@ -101,17 +102,6 @@ body {
     }
   }
 
-  pre.giallo {
-    padding: 1em;
-    border-radius: var(--round);
-    @media (prefers-contrast: more) {
-      border: solid #fff;
-    }
-    code {
-      background: inherit;
-    }
-  }
-
   div.footnote-definition {
     font-size: 0.9em;
     color: var(--fg);
@@ -131,8 +121,18 @@ ul {
   list-style-type: "- ";
 }
 
-li::marker {
-  color: var(--list);
+li {
+  &::marker {
+    color: var(--list);
+  }
+  &.article-item {
+    div {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      padding-bottom: 15px;
+    }
+  }
 }
 
 h1 {
@@ -175,12 +175,23 @@ blockquote {
   }
 }
 
-code {
+:not(pre) > code {
   font-family: my-font, monospace;
   background: var(--selection);
   padding: 0.02em 0.3em;
   margin: 0 -0.3em;
   border-radius: 0.3em;
+}
+
+pre.giallo {
+  padding: 1em;
+  border-radius: var(--round);
+  @media (prefers-contrast: more) {
+    border: solid #fff;
+  }
+  code {
+    background: inherit;
+  }
 }
 
 img {
