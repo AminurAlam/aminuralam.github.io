@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>fisher blog</title>
+    <link rel="self" type="application/atom+xml" href="https://aminuralam.github.io/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://aminuralam.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-01-01T00:00:00+00:00</updated>
+    <id>https://aminuralam.github.io/atom.xml</id>
+    <entry xml:lang="en">
+        <title>hello world</title>
+        <published>2026-01-01T00:00:00+00:00</published>
+        <updated>2026-01-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://aminuralam.github.io/hello-world/"/>
+        <id>https://aminuralam.github.io/hello-world/</id>
+        
+        <content type="html" xml:base="https://aminuralam.github.io/hello-world/">&lt;h1 id=&quot;heading-1&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#heading-1&quot; aria-label=&quot;Anchor link for: heading-1&quot;&gt;Heading 1&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Lorem ipsum &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;getting-started&#x2F;overview&#x2F;&quot;&gt;dolor sit&lt;&#x2F;a&gt;
+amet, &lt;code&gt;consectetur&lt;&#x2F;code&gt; adipiscing elit, sed&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; do eiusmod tempor &lt;strong&gt;incididunt&lt;&#x2F;strong&gt; ut
+labore et dolore magnam &lt;em&gt;aliquam&lt;&#x2F;em&gt; quaerat voluptatem. Ut enim aeque doleamus animo,
+cum corpore dolemus, fieri tamen permagna.&lt;&#x2F;p&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;this is some text explaining the footnote above&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magnam aliquam quaerat&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#2&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; voluptatem. Ut enim aeque doleamus animo,
+cum corpore dolemus, fieri tamen permagna.&lt;&#x2F;p&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;2&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;&#x2F;sup&gt;
+&lt;p&gt;this is more text explaining the footnote above,
+this is more text explaining the footnote above
+this is more text explaining the footnote above,
+this is more text explaining the footnote above.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;heading-2-1&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#heading-2-1&quot; aria-label=&quot;Anchor link for: heading-2-1&quot;&gt;Heading 2.1&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Here is a list of items:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Item 1&lt;&#x2F;li&gt;
+&lt;li&gt;Item 2&lt;&#x2F;li&gt;
+&lt;li&gt;Item 3
+&lt;ol&gt;
+&lt;li&gt;First&lt;&#x2F;li&gt;
+&lt;li&gt;Second&lt;&#x2F;li&gt;
+&lt;li&gt;Third&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;heading-2-2&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#heading-2-2&quot; aria-label=&quot;Anchor link for: heading-2-2&quot;&gt;Heading 2.2&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Here is a blockquote:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote. It&#x27;s a great way to highlight a quote or a piece of
+text.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;And here is a code block with syntax highlighting for Rust:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #A9B1D6; background-color: #1A1B26;&quot;&gt;&lt;code data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #89DDFF;&quot;&gt;fn&lt;&#x2F;span&gt;&lt;span style=&quot;color: #7AA2F7;&quot;&gt; main&lt;&#x2F;span&gt;&lt;span style=&quot;color: #89DDFF;&quot;&gt;() {&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #7AA2F7;&quot;&gt;    println!&lt;&#x2F;span&gt;&lt;span style=&quot;color: #89DDFF;&quot;&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECE6A;&quot;&gt;Hello, world!&lt;&#x2F;span&gt;&lt;span style=&quot;color: #89DDFF;&quot;&gt;&amp;quot;);&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #89DDFF;&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Here is a code block with syntax highlighting for Python:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #A9B1D6; background-color: #1A1B26;&quot;&gt;&lt;code data-lang=&quot;python&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #BB9AF7;&quot;&gt;def&lt;&#x2F;span&gt;&lt;span style=&quot;color: #7AA2F7;&quot;&gt; hello_world&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ABDF5;&quot;&gt;():&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #0DB9D7;&quot;&gt;    print&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ABDF5;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #89DDFF;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECE6A;&quot;&gt;Hello, world!&lt;&#x2F;span&gt;&lt;span style=&quot;color: #89DDFF;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ABDF5;&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;A table:&lt;&#x2F;p&gt;
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;&lt;th&gt;Name&lt;&#x2F;th&gt;&lt;th&gt;Dimensions&lt;&#x2F;th&gt;&lt;th&gt;Position&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;
+    &lt;&#x2F;thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;&lt;td&gt;Boboli Obelisk&lt;&#x2F;td&gt;&lt;td&gt;1m × 1m × 4m&lt;&#x2F;td&gt;&lt;td&gt;43°45′50.78″N 11°15′3.34″E&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+        &lt;tr&gt;&lt;td&gt;Pyramid of Khafre&lt;&#x2F;td&gt;&lt;td&gt;215m × 215m × 136m&lt;&#x2F;td&gt;&lt;td&gt;29°58′34″N 31°07′51″E&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+    &lt;&#x2F;tbody&gt;
+&lt;&#x2F;table&gt;
+&lt;p&gt;An image:
+&lt;img src=&quot;https:&#x2F;&#x2F;http.cat&#x2F;404&quot; alt=&quot;alt text&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+</content>
+        
+    </entry>
+</feed>
