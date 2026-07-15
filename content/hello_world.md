@@ -6,13 +6,21 @@ date = '2026-01-01'
 # Heading 1
 
 Lorem ipsum [dolor sit](https://www.getzola.org/documentation/getting-started/overview/)
-amet, `consectetur` adipiscing elit, sed[^1] do[^2] eiusmod tempor **incididunt** ut
+amet, `consectetur` adipiscing elit, sed[^1] do eiusmod tempor **incididunt** ut
 labore et dolore magnam _aliquam_ quaerat voluptatem. Ut enim aeque doleamus animo,
 cum corpore dolemus, fieri tamen permagna.
 
+[^1]: this is some text explaining the footnote above
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo,
+ut labore et dolore magnam aliquam quaerat[^2] voluptatem. Ut enim aeque doleamus animo,
 cum corpore dolemus, fieri tamen permagna.
+
+[^2]:
+    this is more text explaining the footnote above,
+    this is more text explaining the footnote above
+    this is more text explaining the footnote above,
+    this is more text explaining the footnote above.
 
 ## Heading 2.1
 
@@ -47,11 +55,19 @@ def hello_world():
     print("Hello, world!")
 ```
 
+A table:
+
+<table>
+    <thead>
+        <tr><th>Name</th><th>Dimensions</th><th>Position</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Boboli Obelisk</td><td>1m × 1m × 4m</td><td>43°45′50.78″N 11°15′3.34″E</td></tr>
+        <tr><td>Pyramid of Khafre</td><td>215m × 215m × 136m</td><td>29°58′34″N 31°07′51″E</td></tr>
+    </tbody>
+</table>
+
 An image:
 ![alt text](https://http.cat/404)
 
 ---
-
-[^1]: this is some text explaining the footnote above
-
-[^2]: this is more text explaining the footnote above

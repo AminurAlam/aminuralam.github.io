@@ -4,8 +4,8 @@
   --fg: light-dark(#1a1a1a, #c0caf5);
   --bg: light-dark(#cce, #24283b);
   --accent: light-dark(#0050b3, #7aa2f7);
+  --accent2: light-dark(#de640b, #ff9e64);
   --selection: light-dark(#7aa2f7, #2e3c64);
-  --list: light-dark(#b15c00, #ff9e64);
 
   --round: 1em;
   --width: 45rem;
@@ -14,7 +14,7 @@
   @media (prefers-contrast: more) {
     --fg: light-dark(#000, #fff);
     --bg: light-dark(#ddf, #1a1b26);
-    --accent: light-dark(#00f, #00f);
+    /* --accent: light-dark(#00f, #00f); */
   }
 
   #dark-icon {
@@ -55,65 +55,107 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px 0 10px;
+}
 
+a {
+  color: var(--accent);
+  @media (prefers-reduced-motion: no-preference) {
+    &:hover {
+      color: var(--bg);
+      background: var(--accent);
+      text-decoration-color: var(--accent);
+      text-decoration-skip-ink: none;
+    }
+  }
+}
+
+nav {
+  padding: 10px 0 10px 0;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  label {
+    input {
+      display: none;
+    }
+  }
   a {
-    color: var(--accent);
-    @media (prefers-reduced-motion: no-preference) {
-      &:hover {
-        color: var(--bg);
-        background: var(--accent);
-        text-decoration-color: var(--accent);
-        text-decoration-skip-ink: none;
+    text-decoration: none;
+    &:hover {
+      color: var(--accent);
+      background: var(--bg);
+      svg {
+        fill: var(--accent);
+        color: var(--accent);
       }
     }
   }
+  svg {
+    height: var(--button-size);
+    width: var(--button-size);
+    fill: var(--fg);
+    color: var(--fg);
+  }
+}
 
-  nav {
-    padding: 10px 0 10px 0;
+div#list-of-links {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  a {
     display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    label {
-      input {
-        display: none;
-      }
-    }
-    a {
-      text-decoration: none;
-      &:hover {
-        color: var(--accent);
-        background: var(--bg);
+    justify-content: left;
+    align-items: center;
+    text-decoration: none;
+    min-width: 40%;
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    min-height: 50px;
+    &:hover {
+      svg {
+        fill: var(--bg);
+        color: var(--bg);
       }
     }
     svg {
+      margin: 0px 20px;
       height: var(--button-size);
       width: var(--button-size);
       fill: var(--fg);
       color: var(--fg);
     }
   }
+}
 
-  div#blog-head {
-    text-align: center;
-    div#blog-title {
-      font-size: 2em;
-    }
+div#blog-head {
+  text-align: center;
+  div#blog-title {
+    font-size: 2em;
   }
+}
 
-  div.footnote-definition {
-    font-size: 0.9em;
-    color: var(--fg);
-    padding: 1em 1em 0.01em 1em;
-    border-radius: var(--round);
+div.footnote-definition {
+  font-size: 0.9em;
+  color: var(--fg);
+  padding: 0em 3em;
+  border-radius: var(--round);
+  sup.footnote-definition-label {
+    color: var(--accent2);
   }
-  a.zola-anchor {
-    text-decoration: none;
-    &:hover {
-      /* color: var(--accent); */
-      /* background: var(--bg); */
-    }
+  p {
+    margin: 0px;
+  }
+}
+
+a.zola-anchor {
+  text-decoration: none;
+  &:hover {
+    color: var(--accent);
+    background: var(--bg);
   }
 }
 
@@ -123,7 +165,7 @@ ul {
 
 li {
   &::marker {
-    color: var(--list);
+    color: var(--accent2);
   }
   &.article-item {
     div {
@@ -160,10 +202,29 @@ h1,
 h2,
 h3 {
   &::before {
-    color: var(--accent);
+    color: var(--accent2);
   }
   a {
     color: var(--fg);
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 0;
+  margin: 30px 0px;
+  thead tr:last-child th {
+    border-top: 3px solid var(--fg);
+    border-bottom: 3px solid var(--fg);
+  }
+  tbody tr:last-child td {
+    border-bottom: 3px solid var(--fg);
+  }
+  th,
+  td {
+    vertical-align: top;
+    text-align: left;
   }
 }
 
@@ -171,7 +232,7 @@ blockquote {
   border-left: 0.2em solid var(--accent);
   /* background: var(--quote-bg); */
   p {
-    padding: 5pt 5px 5pt 15px;
+    padding: 5px 5px 5px 15px;
   }
 }
 

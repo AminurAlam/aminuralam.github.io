@@ -1,7 +1,12 @@
 {% extends "base.html" %} {% block content %}
 
 <main>
-  <div>hello this is my website</div>
+  <div>
+    <p>
+      hello this is my website where you can blogs i have written, or visit my
+      <a href="/links">other links</a>
+    </p>
+  </div>
   <ul>
     {% for page in section.pages %}
     <li class="article-item">
